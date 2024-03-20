@@ -13,12 +13,17 @@ public class Grab : MonoBehaviour
 
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.G))
 		{
-            if(animator.GetBool("IsGrab"))
-                animator.SetBool("IsGrab", false);
-            else
+            //if(animator.GetBool("IsGrab"))
+            //    animator.SetBool("IsGrab", false);
+            //else
                 animator.SetBool("IsGrab", true);
+        }
+
+		if (Input.GetKeyUp(KeyCode.G))
+		{
+            animator.SetBool("IsGrab", false);
         }
     }
 }
