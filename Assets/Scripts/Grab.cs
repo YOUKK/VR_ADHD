@@ -15,9 +15,6 @@ public class Grab : MonoBehaviour
     {
 		if (Input.GetKeyDown(KeyCode.G))
 		{
-            //if(animator.GetBool("IsGrab"))
-            //    animator.SetBool("IsGrab", false);
-            //else
                 animator.SetBool("IsGrab", true);
         }
 
